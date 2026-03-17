@@ -1,5 +1,11 @@
 // app/layout.tsx
 import './globals.css'
+import { Inter } from 'next/font/google'
+
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 export const metadata = {
   title: 'Luca Bezzeccheri Trading',
@@ -12,8 +18,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="it">
-      <body className="bg-black text-white antialiased">
+    <html lang="it" className={inter.className}>
+      <body className="min-h-screen bg-gradient-to-b from-[#050509] via-[#050509] to-[#000000] text-white antialiased">
         {children}
       </body>
     </html>
