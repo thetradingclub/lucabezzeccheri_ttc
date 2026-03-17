@@ -60,7 +60,9 @@ export default function Home() {
             <h1
               className={`text-4xl font-semibold tracking-tight md:text-5xl lg:text-6xl ${poppins.className}`}
             >
-              Trading data-based. Regole, numeri e disciplina.
+              Trading data-based. 
+              <br />
+              Regole, numeri e disciplina.
             </h1>
             <p className="max-w-xl text-sm text-white/70">
               Ti aiuto a costruire da zero il tuo processo operativo replicabile per renderti
@@ -219,7 +221,9 @@ export default function Home() {
               PROP FIRMS LEADER
             </p>
             <h2 className="text-2xl font-semibold md:text-3xl">
-              Payout o challenge persa? Generiamo profitto in ogni situazione.
+              Payout o challenge persa? 
+              <br />
+              Generiamo profitto in ogni situazione.
             </h2>
             <p className="text-sm text-white/70">
               Grazie a questo sistema hai la possibilità di generare profitti indipendentemente
