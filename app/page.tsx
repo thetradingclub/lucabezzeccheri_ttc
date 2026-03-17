@@ -67,75 +67,26 @@ export default function Home() {
               indipendente mettendo insieme dati, statistica e gestione del rischio.
             </p>
 
+            {/* Tre bottoni principali - verdi */}
             <div className="flex flex-wrap gap-3">
               <a
                 href="#formazione"
-                className={`inline-flex items-center justify-center rounded-full bg-red-500 px-6 py-2 text-xs md:text-sm font-semibold uppercase tracking-[0.25em] text-black hover:bg-red-400 ${dmSans.className}`}
+                className={`inline-flex items-center justify-center rounded-full bg-emerald-500 px-6 py-2 text-xs md:text-sm font-semibold uppercase tracking-[0.25em] text-black hover:bg-emerald-400 ${dmSans.className}`}
               >
-                VEDI PERCORSO FORMATIVO
+                MENTORSHIP 1-1
               </a>
               <a
-                href="#contatti"
-                className={`rounded-full border border-white/40 px-7 py-2.5 text-[0.75rem] font-semibold uppercase tracking-[0.25em] text-white/90 hover:border-white hover:text-white ${dmSans.className}`}
+                href="#prop-firms"
+                className={`inline-flex items-center justify-center rounded-full bg-emerald-500 px-6 py-2 text-xs md:text-sm font-semibold uppercase tracking-[0.25em] text-black hover:bg-emerald-400 ${dmSans.className}`}
               >
-                PRENOTA UNA CALL
+                PROP FIRMS LEADER
               </a>
-            </div>
-
-            <div className="flex flex-wrap gap-6 pt-4 text-xs text-white/60">
-              <div>
-                <p
-                  className={`text-[0.8rem] uppercase tracking-[0.18em] text-white/60 ${dmSans.className}`}
-                >
-                  FOCUS
-                </p>
-                <p>Forex, Indici</p>
-              </div>
-              <div>
-                <p
-                  className={`text-[0.8rem] uppercase tracking-[0.18em] text-white/60 ${dmSans.className}`}
-                >
-                  ADATTO A CHI
-                </p>
-                <p>
-                  Persone con voglia di “arrivare”. No sala segnali o bot miracolosi: niente
-                  scam.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Box laterale */}
-          <div className="mt-8 flex w-full flex-1 flex-col gap-4 md:mt-0 md:max-w-xs">
-            <div className="rounded-2xl border border-red-500/40 bg-gradient-to-b from-red-500/15 via-red-500/5 to-transparent p-4">
-              <p
-                className={`text-[0.8rem] uppercase tracking-[0.2em] text-red-400 ${dmSans.className}`}
+              <a
+                href="#servizi"
+                className={`inline-flex items-center justify-center rounded-full bg-emerald-500 px-6 py-2 text-xs md:text-sm font-semibold uppercase tracking-[0.25em] text-black hover:bg-emerald-400 ${dmSans.className}`}
               >
-                ATTENZIONE
-              </p>
-              <h2 className="mt-2 text-sm font-semibold">
-                Questo non è un percorso per chi cerca scorciatoie.
-              </h2>
-              <p className="mt-1 text-xs text-white/70">
-                Nessun “diventa profittevole in 30 giorni”.
-                <br />
-                Se non sei disposto a lavorare seriamente sul processo, non è il programma
-                giusto per te.
-              </p>
-            </div>
-
-            <div className="rounded-2xl border border-emerald-500/40 bg-gradient-to-b from-emerald-500/15 via-emerald-500/5 to-transparent p-4">
-              <p
-                className={`text-[0.8rem] uppercase tracking-[0.2em] text-emerald-400 ${dmSans.className}`}
-              >
-                SERVIZI
-              </p>
-              <ul className="mt-2 space-y-1 text-xs text-white/70">
-                <li>• Mentorship 1-1 strutturata su 8 settimane</li>
-                <li>• Sistema "Prop Firms Leader"</li>
-                <li>• EA/Tool basic per operatività e Dashboard</li>
-              </ul>
-              <p className="mt-3 text-[0.7rem] text-white/60"></p>
+                ALTRI SERVIZI
+              </a>
             </div>
           </div>
         </div>
@@ -166,72 +117,100 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid gap-4 md:grid-cols-3">
-            <div className="rounded-2xl border border-emerald-500/50 bg-emerald-500/5 p-4">
-              <p
-                className={`text-[0.65rem] uppercase tracking-[0.2em] text-white/70 ${dmSans.className}`}
-              >
-                Settimane 1-2
-              </p>
-              <h3 className="mt-1 text-sm font-semibold">Analisi e fondamenta</h3>
-              <p className="mt-1 text-xs text-white/70">
-                Analisi del tuo storico, dei tuoi errori più frequenti e del tuo contesto.
-                Definiamo obiettivi realistici e regole di base.
-              </p>
+          {/* Contenuto + box attenzione (senza bottone call) */}
+          <div className="grid gap-6 md:grid-cols-[1.35fr,0.65fr] md:items-start">
+            <div className="space-y-6">
+              {/* Settimane */}
+              <div className="grid gap-4 md:grid-cols-3">
+                <div className="rounded-2xl border border-emerald-500/50 bg-emerald-500/5 p-4">
+                  <p
+                    className={`text-[0.65rem] uppercase tracking-[0.2em] text-white/70 ${dmSans.className}`}
+                  >
+                    Settimane 1-2
+                  </p>
+                  <h3 className="mt-1 text-sm font-semibold">Analisi e fondamenta</h3>
+                  <p className="mt-1 text-xs text-white/70">
+                    Analisi del tuo storico, dei tuoi errori più frequenti e del tuo contesto.
+                    Definiamo obiettivi realistici e regole di base.
+                  </p>
+                </div>
+                <div className="rounded-2xl border border-emerald-500/50 bg-emerald-500/5 p-4">
+                  <p
+                    className={`text-[0.65rem] uppercase tracking-[0.2em] text-white/70 ${dmSans.className}`}
+                  >
+                    Settimane 3-5
+                  </p>
+                  <h3 className="mt-1 text-sm font-semibold">Processo operativo</h3>
+                  <p className="mt-1 text-xs text-white/70">
+                    Costruiamo il tuo piano di trading, routine giornaliera, gestione del
+                    rischio e modo corretto di usare leva e strumenti.
+                  </p>
+                </div>
+                <div className="rounded-2xl border border-emerald-500/50 bg-emerald-500/5 p-4">
+                  <p
+                    className={`text-[0.65rem] uppercase tracking-[0.2em] text-white/70 ${dmSans.className}`}
+                  >
+                    Settimane 6-8
+                  </p>
+                  <h3 className="mt-1 text-sm font-semibold">Esecuzione e supporto</h3>
+                  <p className="mt-1 text-xs text-white/70">
+                    Lavoro sulle tue operazioni reali, correzione in tempo quasi reale,
+                    adattamento del piano e preparazione per il dopo-percorso.
+                  </p>
+                </div>
+              </div>
+
+              {/* Call / Materiale / Supporto */}
+              <div className="grid gap-4 md:grid-cols-3">
+                <div className="rounded-2xl border border-white/10 bg-white/5 p-4 text-xs text-white/70">
+                  <h3 className="mb-1 text-sm font-semibold">Call settimanali 1-1</h3>
+                  <p>
+                    1 call a settimana da 60–90 minuti, strutturata su obiettivi specifici. Non
+                    sono webinar registrati: lavoriamo sul tuo caso reale.
+                  </p>
+                </div>
+                <div className="rounded-2xl border border-white/10 bg-white/5 p-4 text-xs text-white/70">
+                  <h3 className="mb-1 text-sm font-semibold">Materiale e strumenti di lavoro</h3>
+                  <p>
+                    Template, schede operative e strumenti di tracking pensati per misurare
+                    numeri, non sensazioni.
+                    <br />
+                    Tutto utilizzabile anche dopo il percorso.
+                  </p>
+                </div>
+                <div className="rounded-2xl border border-white/10 bg-white/5 p-4 text-xs text-white/70">
+                  <h3 className="mb-1 text-sm font-semibold">Supporto continuo</h3>
+                  <p>
+                    Supporto h24 per condividere operatività, dubbi e screenshot. Non sei da
+                    solo tra una call e l&apos;altra.
+                  </p>
+                </div>
+              </div>
             </div>
-            <div className="rounded-2xl border border-emerald-500/50 bg-emerald-500/5 p-4">
-              <p
-                className={`text-[0.65rem] uppercase tracking-[0.2em] text-white/70 ${dmSans.className}`}
-              >
-                Settimane 3-5
-              </p>
-              <h3 className="mt-1 text-sm font-semibold">Processo operativo</h3>
-              <p className="mt-1 text-xs text-white/70">
-                Costruiamo il tuo piano di trading, routine giornaliera, gestione del
-                rischio e modo corretto di usare leva e strumenti.
-              </p>
-            </div>
-            <div className="rounded-2xl border border-emerald-500/50 bg-emerald-500/5 p-4">
-              <p
-                className={`text-[0.65rem] uppercase tracking-[0.2em] text-white/70 ${dmSans.className}`}
-              >
-                Settimane 6-8
-              </p>
-              <h3 className="mt-1 text-sm font-semibold">Esecuzione e supporto</h3>
-              <p className="mt-1 text-xs text-white/70">
-                Lavoro sulle tue operazioni reali, correzione in tempo quasi reale,
-                adattamento del piano e preparazione per il dopo-percorso.
-              </p>
+
+            {/* Solo box attenzione */}
+            <div className="flex flex-col">
+              <div className="rounded-2xl border border-red-500/40 bg-gradient-to-b from-red-500/15 via-red-500/5 to-transparent p-4">
+                <p
+                  className={`text-[0.8rem] uppercase tracking-[0.2em] text-red-400 ${dmSans.className}`}
+                >
+                  ATTENZIONE
+                </p>
+                <h2 className="mt-2 text-sm font-semibold">
+                  Questo non è un percorso per chi cerca scorciatoie.
+                </h2>
+                <p className="mt-1 text-xs text-white/70">
+                  Nessun “diventa profittevole in 30 giorni”.
+                  <br />
+                  Se non sei disposto a lavorare seriamente sul processo, non è il programma
+                  giusto per te.
+                </p>
+              </div>
             </div>
           </div>
 
-          <div className="grid gap-4 md:grid-cols-3">
-            <div className="rounded-2xl border border-white/10 bg-white/5 p-4 text-xs text-white/70">
-              <h3 className="mb-1 text-sm font-semibold">Call settimanali 1-1</h3>
-              <p>
-                1 call a settimana da 60–90 minuti, strutturata su obiettivi specifici. Non
-                sono webinar registrati: lavoriamo sul tuo caso reale.
-              </p>
-            </div>
-            <div className="rounded-2xl border border-white/10 bg-white/5 p-4 text-xs text-white/70">
-              <h3 className="mb-1 text-sm font-semibold">Materiale e strumenti di lavoro</h3>
-              <p>
-                Template, schede operative e strumenti di tracking pensati per misurare
-                numeri, non sensazioni.
-                <br />
-                Tutto utilizzabile anche dopo il percorso.
-              </p>
-            </div>
-            <div className="rounded-2xl border border-white/10 bg-white/5 p-4 text-xs text-white/70">
-              <h3 className="mb-1 text-sm font-semibold">Supporto continuo</h3>
-              <p>
-                Supporto h24 per condividere operatività, dubbi e screenshot. Non sei da
-                solo tra una call e l&apos;altra.
-              </p>
-            </div>
-          </div>
-
-          <div className="flex flex-col gap-3 rounded-2xl border border-red-500/60 bg-gradient-to-r from-red-500/15 via-red-500/5 to-transparent px-5 py-4 text-sm text-white/80 md:flex-row md:items-center md:justify-between">
+          {/* Percorso a numero chiuso */}
+          <div className="mt-6 flex flex-col gap-3 rounded-2xl border border-red-500/60 bg-gradient-to-r from-red-500/15 via-red-500/5 to-transparent px-5 py-4 text-sm text-white/80 md:flex-row md:items-center md:justify-between">
             <div>
               <p
                 className={`text-[0.65rem] uppercase tracking-[0.2em] text-red-400 font-semibold ${dmSans.className}`}
@@ -258,6 +237,7 @@ export default function Home() {
         className="border-b border-white/10 bg-gradient-to-b from-[#020207] via-[#050509] to-[#020207]"
       >
         <div className="mx-auto max-w-5xl space-y-8 px-4 py-16">
+          {/* Header */}
           <div className="flex max-w-3xl flex-col gap-3 md:text-left">
             <p
               className={`text-[1rem] uppercase tracking-[0.3em] text-emerald-400/80 ${dmSans.className}`}
@@ -275,6 +255,7 @@ export default function Home() {
             </p>
           </div>
 
+          {/* Riga 1 */}
           <div className="grid gap-4 md:grid-cols-3">
             <div className="rounded-2xl border border-emerald-500/40 bg-emerald-500/5 p-4">
               <h3 className="text-sm font-semibold">Cos&apos;è</h3>
@@ -302,6 +283,7 @@ export default function Home() {
             </div>
           </div>
 
+          {/* Riga 2 */}
           <div className="grid gap-4 md:grid-cols-3">
             <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
               <h3 className="text-sm font-semibold">Per chi</h3>
@@ -329,54 +311,25 @@ export default function Home() {
             </div>
           </div>
 
+          {/* Screenshot risultati / certificati */}
           <div className="space-y-1">
             <p className="text-sm text-white/70">
               Alcuni esempi di challenge, payout e certificati ottenuti lavorando con il
               sistema "Prop Firms Leader" su diverse prop firms.
             </p>
             <div className="grid gap-4 md:grid-cols-3">
-              <div className="rounded-2xl border border-white/10 bg-white/5 p-3">
-                <img
-                  src="/prop-firms/propfirm1.jpg"
-                  alt="Risultato prop firm 1"
-                  className="w-full rounded-xl object-cover"
-                />
-              </div>
-              <div className="rounded-2xl border border-white/10 bg-white/5 p-3">
-                <img
-                  src="/prop-firms/propfirm2.jpg"
-                  alt="Risultato prop firm 2"
-                  className="w-full rounded-xl object-cover"
-                />
-              </div>
-              <div className="rounded-2xl border border-white/10 bg-white/5 p-3">
-                <img
-                  src="/prop-firms/propfirm3.jpg"
-                  alt="Risultato prop firm 3"
-                  className="w-full rounded-xl object-cover"
-                />
-              </div>
-              <div className="rounded-2xl border border-white/10 bg-white/5 p-3">
-                <img
-                  src="/prop-firms/propfirm4.jpg"
-                  alt="Risultato prop firm 4"
-                  className="w-full rounded-xl object-cover"
-                />
-              </div>
-              <div className="rounded-2xl border border-white/10 bg-white/5 p-3">
-                <img
-                  src="/prop-firms/propfirm5.jpg"
-                  alt="Risultato prop firm 5"
-                  className="w-full rounded-xl object-cover"
-                />
-              </div>
-              <div className="rounded-2xl border border-white/10 bg-white/5 p-3">
-                <img
-                  src="/prop-firms/propfirm6.jpg"
-                  alt="Risultato prop firm 6"
-                  className="w-full rounded-xl object-cover"
-                />
-              </div>
+              {['1', '2', '3', '4', '5', '6'].map((n) => (
+                <div
+                  key={n}
+                  className="rounded-2xl border border-white/10 bg-white/5 p-3"
+                >
+                  <img
+                    src={`/prop-firms/propfirm${n}.jpg`}
+                    alt={`Risultato prop firm ${n}`}
+                    className="w-full rounded-xl object-cover"
+                  />
+                </div>
+              ))}
             </div>
             <p className="text-[0.8rem] text-white/50">
               I risultati mostrati sono esempi passati e non garantiscono performance future.
@@ -384,6 +337,7 @@ export default function Home() {
             </p>
           </div>
 
+          {/* CTA */}
           <div className="flex flex-col gap-3 rounded-2xl border border-red-500/60 bg-gradient-to-r from-red-500/15 via-red-500/5 to-transparent px-5 py-4 text-sm text-white/80 md:flex-row md:items-center md:justify-between">
             <div>
               <p
