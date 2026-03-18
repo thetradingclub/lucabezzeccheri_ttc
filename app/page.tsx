@@ -234,7 +234,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="hidden md:flex justify-end">
+            <div className="flex justify-end">
               <a
                 href="https://t.me/the_tradingclub"
                 target="_blank"
