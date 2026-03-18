@@ -60,7 +60,7 @@ export default function Home() {
             <h1
               className={`text-4xl font-semibold tracking-tight md:text-5xl lg:text-6xl ${poppins.className}`}
             >
-              Trading data-based. 
+              Trading data-based.
               <br />
               Regole, numeri e disciplina.
             </h1>
@@ -222,7 +222,7 @@ export default function Home() {
                 PROP FIRMS LEADER
               </p>
               <h2 className="text-2xl font-semibold md:text-3xl">
-                Payout o challenge persa? 
+                Payout o challenge persa?
                 <br />
                 Generiamo profitto in ogni situazione.
               </h2>
@@ -430,15 +430,27 @@ export default function Home() {
                 </li>
               </ul>
             </div>
+
+            {/* NUOVO BLOCCO AVVERTENZA CHIARA */}
             <div className="rounded-2xl border border-white/10 bg-white/5 p-4 text-[0.7rem] text-white/60">
-              <p className="mb-1 font-semibold text-white/80">Disclaimer</p>
+              <p className="mb-1 font-semibold text-white/80">Avvertenza sui rischi</p>
+              <p className="mb-2">
+                Il trading di strumenti finanziari comporta un elevato livello di rischio e
+                può comportare la perdita dell&apos;intero capitale investito. Non siamo
+                consulenti finanziari e non forniamo segnali di investimento o
+                raccomandazioni operative personalizzate.
+              </p>
+              <p className="mb-2">
+                La performance passata non è indicativa dei risultati futuri. I contenuti
+                presenti su questo sito hanno finalità esclusivamente formative e
+                informative. Nessuna informazione qui presente costituisce consulenza
+                finanziaria personalizzata, sollecitazione all&apos;investimento o
+                raccomandazione operativa.
+              </p>
               <p>
-                Le informazioni presenti su questo sito hanno finalità esclusivamente
-                informative ed educative e non costituiscono in alcun modo consulenza
-                finanziaria o invito al pubblico risparmio.
-                <br />
-                Il trading è attività ad alto rischio e può comportare la perdita del capitale
-                investito.
+                I risultati mostrati, ove presenti, sono puramente illustrativi e non
+                costituiscono garanzia di performance future. Le decisioni operative e
+                finanziarie sono di esclusiva responsabilità dell&apos;utente.
               </p>
             </div>
           </div>
@@ -529,9 +541,26 @@ export default function Home() {
       </section>
 
       <footer className="border-t border-white/10 bg-black">
-        <div className="mx-auto flex max-w-5xl flex-col items-center justify-between gap-3 px-4 py-6 text-[0.7rem] text-white/40 md:flex-row">
-          <p>© {currentYear} Luca Bezzeccheri. Tutti i diritti riservati.</p>
-          <p>Il trading è rischioso. Non è adatto a tutti.</p>
+        <div className="mx-auto flex max-w-5xl flex-col gap-4 px-4 py-6 text-[0.7rem] text-white/40">
+          <div className="flex flex-col items-center justify-between gap-3 md:flex-row">
+            <p>© {currentYear} Luca Bezzeccheri. Tutti i diritti riservati.</p>
+            <p>Il trading è rischioso. Non è adatto a tutti.</p>
+          </div>
+
+          {/* Avvertenza sintetica nel footer */}
+          <div className="space-y-1 text-[0.65rem] text-white/40">
+            <p>
+              Avvertenza sui rischi: il trading di strumenti finanziari comporta un elevato
+              livello di rischio e può comportare la perdita dell&apos;intero capitale
+              investito. La performance passata non è indicativa dei risultati futuri.
+            </p>
+            <p>
+              I contenuti di questo sito hanno finalità esclusivamente formative e
+              informative e non costituiscono consulenza finanziaria personalizzata,
+              sollecitazione all&apos;investimento o raccomandazione operativa. Le decisioni
+              operative e finanziarie sono di esclusiva responsabilità dell&apos;utente.
+            </p>
+          </div>
         </div>
       </footer>
     </main>
