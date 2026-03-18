@@ -488,7 +488,7 @@ export default function Home() {
             <h2 className="mt-2 text-2xl font-semibold md:text-3xl">
               Vuoi capire se posso aiutarti?
             </h2>
-            <p className="max-w-md text-sm text-white/70">
+            <p className="w-md text-sm text-white/70">
               Che tu voglia iniziare un percorso di formazione o scoprire il servizio{' '}
               <span className="text-emerald-400 font-semibold">Prop Firms Leader</span>,
               scrivimi due righe sul tuo punto di partenza e su cosa stai cercando.
