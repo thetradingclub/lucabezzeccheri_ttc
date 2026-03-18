@@ -209,47 +209,51 @@ export default function Home() {
       </section>
 
       {/* Prop Firms Leader */}
-      <section
-        id="prop-firms"
-        className="border-b border-white/10 bg-gradient-to-b from-[#020207] via-[#050509] to-[#020207]"
-      >
-        <div className="mx-auto max-w-5xl space-y-8 px-4 py-16">
-          <div className="flex max-w-3xl flex-col gap-3 md:text-left">
-            <p
-              className={`text-[1rem] uppercase tracking-[0.3em] text-emerald-400/80 ${dmSans.className}`}
-            >
-              PROP FIRMS LEADER
-            </p>
-            <div className="flex justify-end">
-              <a
-                href="https://t.me/the_tradingclub"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`inline-flex items-center gap-2 rounded-full border border-emerald-500/40 bg-emerald-500/10 px-3 py-1 text-[0.65rem] font-semibold uppercase tracking-[0.16em] text-emerald-400 hover:bg-emerald-500/20 transition ${dmSans.className}`}
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  className="h-3 w-3"
-                >
-                  <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L8.32 13.617l-2.96-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.828.942z" />
-                </svg>
-                Accedi al canale Telegram gratuito
-              </a>
-            </div>
-            <h2 className="text-2xl font-semibold md:text-3xl">
-              Payout o challenge persa? 
-              <br />
-              Generiamo profitto in ogni situazione.
-            </h2>
-            <p className="text-sm text-white/70">
-              Grazie a questo sistema hai la possibilità di generare profitti indipendentemente
-              dal risultato.
-              <br />
-              Challenge persa? Nessun problema, ottieni lo stesso un profitto.
-            </p>
-          </div>
+<section
+  id="prop-firms"
+  className="border-b border-white/10 bg-gradient-to-b from-[#020207] via-[#050509] to-[#020207]"
+>
+  <div className="mx-auto max-w-5xl space-y-8 px-4 py-16">
+    <div className="flex items-start justify-between gap-4">
+      <div className="flex max-w-3xl flex-col gap-1 md:text-left">
+        <p
+          className={`text-[1rem] uppercase tracking-[0.3em] text-emerald-400/80 ${dmSans.className}`}
+        >
+          PROP FIRMS LEADER
+        </p>
+        <h2 className="text-2xl font-semibold md:text-3xl">
+          Payout o challenge persa? 
+          <br />
+          Generiamo profitto in ogni situazione.
+        </h2>
+        <p className="text-sm text-white/70">
+          Grazie a questo sistema hai la possibilità di generare profitti indipendentemente
+          dal risultato.
+          <br />
+          Challenge persa? Nessun problema, ottieni lo stesso un profitto.
+        </p>
+      </div>
+
+      <div className="hidden md:flex justify-end">
+        <a
+          href="https://t.me/the_tradingclub"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={`inline-flex items-center gap-2 rounded-full border border-emerald-500/40 bg-emerald-500/10 px-3 py-1 text-[0.65rem] font-semibold uppercase tracking-[0.16em] text-emerald-400 hover:bg-emerald-500/20 transition ${dmSans.className}`}
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            className="h-3 w-3"
+          >
+            <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L8.32 13.617l-2.96-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.828.942z" />
+          </svg>
+          Accedi al canale Telegram gratuito
+        </a>
+      </div>
+    </div>
+
 
           <div className="grid gap-4 md:grid-cols-3">
             <div className="rounded-2xl border border-emerald-500/40 bg-emerald-500/5 p-4">
