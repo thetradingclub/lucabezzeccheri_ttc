@@ -36,7 +36,7 @@ export default function Home() {
               PROP FIRMS LEADER
             </a>
             <a href="#servizi" className="hover:text-white">
-              SERVIZI
+              EXTRA
             </a>
             <a href="#chi-sono" className="hover:text-white">
               CHI SONO
@@ -215,11 +215,24 @@ export default function Home() {
       >
         <div className="mx-auto max-w-5xl space-y-8 px-4 py-16">
           <div className="flex max-w-3xl flex-col gap-3 md:text-left">
-            <p
-              className={`text-[1rem] uppercase tracking-[0.3em] text-emerald-400/80 ${dmSans.className}`}
-            >
-              PROP FIRMS LEADER
-            </p>
+            <div className="flex items-center justify-between">
+              <p
+                className={`text-[1rem] uppercase tracking-[0.3em] text-emerald-400/80 ${dmSans.className}`}
+              >
+                PROP FIRMS LEADER
+              </p>
+              <a
+                href="https://t.me/the_tradingclub"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`inline-flex items-center gap-2 rounded-full border border-emerald-500/40 bg-emerald-500/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.15em] text-emerald-400 hover:bg-emerald-500/20 transition ${dmSans.className}`}
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-3.5 w-3.5">
+                  <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L8.32 13.617l-2.96-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.828.942z"/>
+                </svg>
+                Guarda il canale
+              </a>
+            </div>
             <h2 className="text-2xl font-semibold md:text-3xl">
               Payout o challenge persa? 
               <br />
@@ -265,7 +278,7 @@ export default function Home() {
               <h3 className="text-sm font-semibold">Per chi</h3>
               <p className="mt-1 text-xs text-white/70">
                 Trader e investitori che vogliono diversificare l&apos;operatività legata alle
-                prop firms con un approccio il più possibile “free risk”, sfruttando le regole
+                prop firms con un approccio il più possibile "free risk", sfruttando le regole
                 delle prop invece di subirle.
               </p>
             </div>
@@ -346,7 +359,7 @@ export default function Home() {
             <p
               className={`text-[1rem] uppercase tracking-[0.3em] text-emerald-400/80 ${dmSans.className}`}
             >
-              SERVIZI & TOOL
+              EXTRA
             </p>
             <h2 className="mt-2 text-2xl font-semibold md:text-3xl">
               Dalla teoria ai numeri del tuo conto.
@@ -427,7 +440,7 @@ export default function Home() {
                   gli obiettivi.
                 </li>
                 <li>
-                  • Focus su processo e numeri, non “setup segreti”. Costruiamo insieme un
+                  • Focus su processo e numeri, non "setup segreti". Costruiamo insieme un
                   sistema oggettivo e replicabile.
                 </li>
                 <li>
@@ -467,7 +480,9 @@ export default function Home() {
               Vuoi capire se posso aiutarti?
             </h2>
             <p className="max-w-md text-sm text-white/70">
-              Scrivimi due righe sul tuo punto di partenza e su cosa stai cercando.
+              Che tu voglia iniziare un percorso di formazione o scoprire il servizio{' '}
+              <span className="text-emerald-400 font-semibold">Prop Firms Leader</span>,
+              scrivimi due righe sul tuo punto di partenza e su cosa stai cercando.
               <br />
               Ti rispondo personalmente quando non sono davanti ai grafici.
             </p>
