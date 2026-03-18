@@ -209,51 +209,50 @@ export default function Home() {
       </section>
 
       {/* Prop Firms Leader */}
-<section
-  id="prop-firms"
-  className="border-b border-white/10 bg-gradient-to-b from-[#020207] via-[#050509] to-[#020207]"
->
-  <div className="mx-auto max-w-5xl space-y-8 px-4 py-16">
-    <div className="flex items-start justify-between gap-4">
-      <div className="flex max-w-3xl flex-col gap-1 md:text-left">
-        <p
-          className={`text-[1rem] uppercase tracking-[0.3em] text-emerald-400/80 ${dmSans.className}`}
-        >
-          PROP FIRMS LEADER
-        </p>
-        <h2 className="text-2xl font-semibold md:text-3xl">
-          Payout o challenge persa? 
-          <br />
-          Generiamo profitto in ogni situazione.
-        </h2>
-        <p className="text-sm text-white/70">
-          Grazie a questo sistema hai la possibilità di generare profitti indipendentemente
-          dal risultato.
-          <br />
-          Challenge persa? Nessun problema, ottieni lo stesso un profitto.
-        </p>
-      </div>
+      <section
+        id="prop-firms"
+        className="border-b border-white/10 bg-gradient-to-b from-[#020207] via-[#050509] to-[#020207]"
+      >
+        <div className="mx-auto max-w-5xl space-y-8 px-4 py-16">
+          <div className="flex items-start justify-between gap-4">
+            <div className="flex max-w-3xl flex-col gap-1 md:text-left">
+              <p
+                className={`text-[1rem] uppercase tracking-[0.3em] text-emerald-400/80 ${dmSans.className}`}
+              >
+                PROP FIRMS LEADER
+              </p>
+              <h2 className="text-2xl font-semibold md:text-3xl">
+                Payout o challenge persa? 
+                <br />
+                Generiamo profitto in ogni situazione.
+              </h2>
+              <p className="text-sm text-white/70">
+                Grazie a questo sistema hai la possibilità di generare profitti indipendentemente
+                dal risultato.
+                <br />
+                Challenge persa? Nessun problema, ottieni lo stesso un profitto.
+              </p>
+            </div>
 
-      <div className="hidden md:flex justify-end">
-        <a
-          href="https://t.me/the_tradingclub"
-          target="_blank"
-          rel="noopener noreferrer"
-          className={`inline-flex items-center gap-2 rounded-full border border-emerald-500/40 bg-emerald-500/10 px-3 py-1 text-[0.65rem] font-semibold uppercase tracking-[0.16em] text-emerald-400 hover:bg-emerald-500/20 transition ${dmSans.className}`}
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            className="h-3 w-3"
-          >
-            <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L8.32 13.617l-2.96-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.828.942z" />
-          </svg>
-          Accedi al canale Telegram gratuito
-        </a>
-      </div>
-    </div>
-
+            <div className="hidden md:flex justify-end">
+              <a
+                href="https://t.me/the_tradingclub"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`inline-flex items-center gap-2 rounded-full border border-emerald-500/40 bg-emerald-500/10 px-3 py-3 text-[0.71rem] font-semibold uppercase tracking-[0.16em] text-emerald-400 hover:bg-emerald-500/20 transition ${dmSans.className}`}
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  className="h-3 w-3"
+                >
+                  <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L8.32 13.617l-2.96-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.828.942z" />
+                </svg>
+                Accedi al canale Telegram gratuito
+              </a>
+            </div>
+          </div>
 
           <div className="grid gap-4 md:grid-cols-3">
             <div className="rounded-2xl border border-emerald-500/40 bg-emerald-500/5 p-4">
@@ -278,33 +277,6 @@ export default function Home() {
                 Applichiamo un sistema di trading proprietario composto da dashboard ed expert,
                 integrando una strategia basata su dati statistici e matematici al tuo modo di
                 fare trading.
-              </p>
-            </div>
-          </div>
-
-          <div className="grid gap-4 md:grid-cols-3">
-            <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
-              <h3 className="text-sm font-semibold">Per chi</h3>
-              <p className="mt-1 text-xs text-white/70">
-                Trader e investitori che vogliono diversificare l&apos;operatività legata alle
-                prop firms con un approccio il più possibile "free risk", sfruttando le regole
-                delle prop invece di subirle.
-              </p>
-            </div>
-            <div className="rounded-2xl border border-white/10 bg-white/5 p-4 text-xs text-white/70">
-              <h3 className="mb-1 text-sm font-semibold">Logica statistica</h3>
-              <p>
-                Il focus è sulla distribuzione dei risultati, non sul singolo trade. Lavoriamo
-                su probabilità, payoff e gestione delle fasi di drawdown, in funzione delle
-                regole specifiche della prop che utilizzi.
-              </p>
-            </div>
-            <div className="rounded-2xl border border-white/10 bg-white/5 p-4 text-xs text-white/70">
-              <h3 className="mb-1 text-sm font-semibold">Rischio e parametri</h3>
-              <p>
-                Tutto viene definito in partenza: tempistiche, parametri di rischio e
-                profittabilità. Un percorso guidato per ogni step del processo, con paletti
-                chiari su drawdown, target e limiti giornalieri.
               </p>
             </div>
           </div>
@@ -358,7 +330,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Servizi */}
+      {/* Servizi / Extra */}
       <section
         id="servizi"
         className="border-b border-white/10 bg-gradient-to-b from-[#020207] via-[#050509] to-[#020207]"
@@ -488,12 +460,10 @@ export default function Home() {
             <h2 className="mt-2 text-2xl font-semibold md:text-3xl">
               Vuoi capire se posso aiutarti?
             </h2>
-            <p className="w-md text-sm text-white/70">
+            <p className="text-sm text-white/70">
               Che tu voglia iniziare un percorso di formazione o scoprire il servizio{' '}
-              <span className="text-emerald-400 font-semibold">Prop Firms Leader</span>,
-              scrivimi due righe sul tuo punto di partenza e su cosa stai cercando.
-              <br />
-              Ti rispondo personalmente quando non sono davanti ai grafici.
+              <span className="text-emerald-400 font-semibold">Prop Firms Leader</span>, scrivimi due righe sul tuo punto di partenza
+              e su cosa stai cercando. Ti rispondo personalmente quando non sono davanti ai grafici.
             </p>
           </div>
 
