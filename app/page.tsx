@@ -215,22 +215,22 @@ export default function Home() {
       >
         <div className="mx-auto max-w-5xl space-y-8 px-4 py-16">
           <div className="flex max-w-3xl flex-col gap-3 md:text-left">
-            <div className="flex items-center justify-between">
-              <p
-                className={`text-[1rem] uppercase tracking-[0.3em] text-emerald-400/80 ${dmSans.className}`}
-              >
-                PROP FIRMS LEADER
-              </p>
+            <p
+              className={`text-[1rem] uppercase tracking-[0.3em] text-emerald-400/80 ${dmSans.className}`}
+            >
+              PROP FIRMS LEADER
+            </p>
+            <div className="flex justify-end">
               <a
                 href="https://t.me/the_tradingclub"
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`inline-flex items-center gap-2 rounded-full border border-emerald-500/40 bg-emerald-500/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.15em] text-emerald-400 hover:bg-emerald-500/20 transition ${dmSans.className}`}
+                className={`inline-flex items-center gap-2 rounded-full border border-emerald-500/40 bg-emerald-500/10 px-6 py-2.5 text-sm font-semibold uppercase tracking-[0.15em] text-emerald-400 hover:bg-emerald-500/20 transition ${dmSans.className}`}
               >
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-3.5 w-3.5">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-4 w-4">
                   <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L8.32 13.617l-2.96-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.828.942z"/>
                 </svg>
-                Guarda il canale
+                Accedi al canale Telegram gratuito
               </a>
             </div>
             <h2 className="text-2xl font-semibold md:text-3xl">
@@ -534,7 +534,7 @@ export default function Home() {
                 name="message"
                 required
                 className="w-full rounded-xl border border-white/15 bg-black/70 px-3 py-2 text-sm text-white outline-none ring-0 focus:border-emerald-400"
-                placeholder="Raccontami brevemente il tuo percorso, il capitale con cui lavori e cosa vorresti migliorare."
+                placeholder="Raccontami brevemente il tuo percorso, il capitale con cui lavori e cosa vorresti migliorare. Se sei interessato al servizio Prop Firms Leader, indicalo qui."
               />
             </div>
             <div className="md:col-span-2">
